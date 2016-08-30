@@ -92,7 +92,7 @@ namespace AkaCore.Manager
             ActivatorMenu.Add("Exhaust", new CheckBox("Use Exhaust"));
             ActivatorMenu.Add("ExhaustHp", new Slider("Exhaust if enemies Hp <=", 40, 0, 100));
             ActivatorMenu.AddGroupLabel("Smite");
-            ActivatorMenu.Add("Smite", new KeyBind("Smite Active", true, KeyBind.BindTypes.PressToggle));
+            ActivatorMenu.Add("SmiteActive", new KeyBind("Smite Active", true, KeyBind.BindTypes.PressToggle));
             ActivatorMenu.Add("SStatus", new CheckBox("Draw Status"));
             ActivatorMenu.Add("SDamage", new CheckBox("Draw Damage"));
             ActivatorMenu.Add("SBaron", new CheckBox("Baron"));
@@ -112,7 +112,7 @@ namespace AkaCore.Manager
             ActivatorMenu.AddGroupLabel("Cleanse");
             ActivatorMenu.Add("Qss", new CheckBox("Use Qss"));
             ActivatorMenu.Add("Mecurial", new CheckBox("Use Mecurial"));
-            ActivatorMenu.Add("Cleanse", new CheckBox("Use Cleanse"));
+            ActivatorMenu.Add("Cleanser", new CheckBox("Use Cleanse"));
             ActivatorMenu.Add("QssDelay", new Slider("Delay", 100, 0, 2000));
             ActivatorMenu.Add("Blind",
                 new CheckBox("Blind", false));
@@ -454,7 +454,7 @@ namespace AkaCore.Manager
         //smite
         public static bool SmiteActive
         {
-            get { return (ActivatorMenu["Smite"].Cast<KeyBind>().CurrentValue); }
+            get { return (ActivatorMenu["SmiteActive"].Cast<KeyBind>().CurrentValue); }
         }
         public static bool SStatus
         {
@@ -533,7 +533,7 @@ namespace AkaCore.Manager
 
         public static bool Cleanse
         {
-            get { return (ActivatorMenu["Cleanse"].Cast<CheckBox>().CurrentValue); }
+            get { return (ActivatorMenu["Cleanser"].Cast<CheckBox>().CurrentValue); }
         }
 
         public static int QssDelay
