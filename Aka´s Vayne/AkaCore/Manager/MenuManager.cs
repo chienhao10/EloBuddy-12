@@ -26,55 +26,55 @@ namespace AkaCore.Manager
 
         private static void Hauptmenu()
         {
-            HMenu = MainMenu.AddMenu("AkaCore", "akacdsore");
-            HMenu.AddGroupLabel("Extension for my addons.");
+            HMenu = MainMenu.AddMenu("Aka核心", "akacdsore");
+            HMenu.AddGroupLabel("我的脚本外设.");
         }
 
         private static void Activatormenu()
         {
-            ActivatorMenu = HMenu.AddSubMenu("Activator", "Activator");
-            ActivatorMenu.AddGroupLabel("Aggressive Items");
-            ActivatorMenu.Add("AItems", new CheckBox("Use Items"));
-            ActivatorMenu.Add("Botrk", new CheckBox("Use Botrk/Bilge"));
-            ActivatorMenu.Add("Hydra", new CheckBox("Use Hydra/Tiamat"));
-            ActivatorMenu.Add("Titanic", new CheckBox("Use Titanic"));
-            ActivatorMenu.Add("HGB", new CheckBox("Use Hextech Gunblade"));
-            ActivatorMenu.Add("HGLP", new CheckBox("Use Hextech GLP"));
-            ActivatorMenu.Add("HPB", new CheckBox("Use Hextech Protobelt"));
-            ActivatorMenu.Add("Queens", new CheckBox("Use Frost Queens"));
-            ActivatorMenu.Add("QueensDis", new Slider("Enemies distance =>", 1500, 0, 3000));
-            ActivatorMenu.Add("Glory", new CheckBox("Use Rightenous Glory"));
-            ActivatorMenu.Add("GloryDis", new Slider("Enemies distance =>", 600, 0, 1000));
-            ActivatorMenu.Add("Talis", new CheckBox("Use Talisman"));
-            ActivatorMenu.Add("TalisDis", new Slider("Enemies distance =>", 1000, 0, 2000));
-            ActivatorMenu.Add("You", new CheckBox("Use Ghostblade"));
-            ActivatorMenu.AddGroupLabel("Defensive Items");
-            ActivatorMenu.Add("DItems", new CheckBox("Use Items"));
-            ActivatorMenu.Add("FaceMe", new CheckBox("Use Face of the Mountain Me")); // The identifier tho kappa
-            ActivatorMenu.Add("FaceMeHp", new Slider("If my hp <=", 20, 0, 100));
-            ActivatorMenu.Add("FaceAlly", new CheckBox("Use Face of the Mountain Ally"));
-            ActivatorMenu.Add("FaceAllyHp", new Slider("If allies hp <=", 20, 0, 100));
+            ActivatorMenu = HMenu.AddSubMenu("活化剂", "Activator");
+            ActivatorMenu.AddGroupLabel("进攻型物品");
+            ActivatorMenu.Add("AItems", new CheckBox("使用物品"));
+            ActivatorMenu.Add("Botrk", new CheckBox("使用 破败/弯刀"));
+            ActivatorMenu.Add("Hydra", new CheckBox("使用 九头蛇/提亚马特"));
+            ActivatorMenu.Add("Titanic", new CheckBox("使用 泰坦"));
+            ActivatorMenu.Add("HGB", new CheckBox("使用 科技枪"));
+            ActivatorMenu.Add("HGLP", new CheckBox("使用 科技枪 GLP"));
+            ActivatorMenu.Add("HPB", new CheckBox("使用 火箭腰带"));
+            ActivatorMenu.Add("Queens", new CheckBox("使用 冰霜指令"));
+            ActivatorMenu.Add("QueensDis", new Slider("敌人范围 =>", 1500, 0, 3000));
+            ActivatorMenu.Add("Glory", new CheckBox("使用 荣光"));
+            ActivatorMenu.Add("GloryDis", new Slider("敌人范围 =>", 600, 0, 1000));
+            ActivatorMenu.Add("Talis", new CheckBox("使用 飞升"));
+            ActivatorMenu.Add("TalisDis", new Slider("敌人范围 =>", 1000, 0, 2000));
+            ActivatorMenu.Add("You", new CheckBox("使用 幽梦"));
+            ActivatorMenu.AddGroupLabel("防守型物品");
+            ActivatorMenu.Add("DItems", new CheckBox("使用物品"));
+            ActivatorMenu.Add("FaceMe", new CheckBox("对我使用山崇")); // The identifier tho kappa
+            ActivatorMenu.Add("FaceMeHp", new Slider("如果我血量 <=", 20, 0, 100));
+            ActivatorMenu.Add("FaceAlly", new CheckBox("对友军使用山崇"));
+            ActivatorMenu.Add("FaceAllyHp", new Slider("如果友军血量p <=", 20, 0, 100));
             ActivatorMenu.Add("SolariMe", new CheckBox("Use Iron Solari Me"));
             ActivatorMenu.Add("SolariMeHp", new Slider("If my hp <=", 20, 0, 100));
             ActivatorMenu.Add("SolariAlly", new CheckBox("Use Iron Solari Ally"));
             ActivatorMenu.Add("SolariAllyHp", new Slider("If allies hp <=", 20, 0, 100));
-            ActivatorMenu.Add("Omen", new CheckBox("Use Randuins"));
+            ActivatorMenu.Add("Omen", new CheckBox("使用 Randuins"));
             ActivatorMenu.Add("OmenHp", new Slider("If my hp <=", 20, 0, 100));
-            ActivatorMenu.Add("Seraphs", new CheckBox("Use Seraphs"));
+            ActivatorMenu.Add("Seraphs", new CheckBox("使用 Seraphs"));
             ActivatorMenu.Add("SeraphsHp", new Slider("If my hp <=", 20, 0, 100));
-            ActivatorMenu.Add("Talis2", new CheckBox("Use Talisman"));
+            ActivatorMenu.Add("Talis2", new CheckBox("使用 Talisman"));
             ActivatorMenu.Add("Talis2Hp", new Slider("If my hp <=", 20, 0, 100));
-            ActivatorMenu.Add("Glory2", new CheckBox("Use Rightenous Glory"));
+            ActivatorMenu.Add("Glory2", new CheckBox("使用 Rightenous Glory"));
             ActivatorMenu.Add("Glory2Hp", new Slider("If my hp <=", 20, 0, 100));
-            ActivatorMenu.Add("Zhonyas", new CheckBox("Use Zhonyas"));
+            ActivatorMenu.Add("Zhonyas", new CheckBox("使用 中亚"));
             ActivatorMenu.Add("ZhonyasHp", new Slider("If my hp <=", 20, 0, 100));
-            ActivatorMenu.AddGroupLabel("Pots");
-            ActivatorMenu.Add("PItems", new CheckBox("Use Pots"));
-            ActivatorMenu.Add("HPPot", new CheckBox("Use Health potion"));
+            ActivatorMenu.AddGroupLabel("药水");
+            ActivatorMenu.Add("PItems", new CheckBox("使用 Pots"));
+            ActivatorMenu.Add("HPPot", new CheckBox("使用 Health potion"));
             ActivatorMenu.Add("HPPotHp", new Slider("If my hp <=", 40, 0, 100));
-            ActivatorMenu.Add("Biscuit", new CheckBox("Use Biscuits"));
+            ActivatorMenu.Add("Biscuit", new CheckBox("使用 Biscuits"));
             ActivatorMenu.Add("BiscuitHp", new Slider("If my hp <=", 40, 0, 100));
-            ActivatorMenu.Add("RefillPot", new CheckBox("Use Refillable potion"));
+            ActivatorMenu.Add("RefillPot", new CheckBox("使用 Refillable potion"));
             ActivatorMenu.Add("RefillPotHp", new Slider("If my hp <=", 60, 0, 100));
             ActivatorMenu.Add("HunterPot", new CheckBox("Use Hunter potion"));
             ActivatorMenu.Add("HunterPotHp", new Slider("If my hp <=", 60, 0, 100));
